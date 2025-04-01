@@ -13,7 +13,7 @@ def handle_vercel_deploy(file_path):
 
     if upload_response.status_code == 200:
         print("✅ File uploaded successfully!")
-        url = "https://question6-hazel.vercel.app/api"
+        url = "vercel_url"
         return url
     else:
         print(f"❌ Upload Error: {upload_response.status_code}, {upload_response.text}")
@@ -21,7 +21,7 @@ def handle_vercel_deploy(file_path):
 
 # # -------------------------------------------
 # # *Step 2: Query for Marks After Upload*
-# query_url = "https://question6-hazel.vercel.app/api?name=OFnAHc&name=5V"  # Example names
+# query_url = "vercel_url"  # Example names
 # query_response = requests.get(query_url)
 
 # # Print the response
