@@ -204,8 +204,8 @@ async def process_question(
             methods=["GET"],
         )
         app.include_router(router)
-        #https://gasolver-hxdaasgkftcvbmgy.centralindia-01.azurewebsites.net
-        base_url = "https://ga-solver-tool-geh2bee5h7ejgdet.centralindia-01.azurewebsites.net"
+        
+        base_url = "127.0.0.1:8000"
         api_url = f"{base_url}/set"
         answer = api_url
 
@@ -247,7 +247,7 @@ async def process_question(
         app.include_router(router)
 
         # Construct the URL for the similarity endpoint
-        base_url = "https://ga-solver-tool-geh2bee5h7ejgdet.centralindia-01.azurewebsites.net"  # Replace <your-app-name> with your Azure app name
+        base_url = "127.0.0.1:8000"  # Replace <your-app-name> with your Azure app name
         similarity_url = f"{base_url}/similarity"
         answer = similarity_url
 
@@ -263,7 +263,7 @@ async def process_question(
         app.include_router(router)
 
         # Construct the URL for the execute endpoint
-        base_url = "https://ga-solver-tool-geh2bee5h7ejgdet.centralindia-01.azurewebsites.net"  # Replace <your-app-name> with your Azure app name
+        base_url = "127.0.0.1:8000"  # Replace <your-app-name> with your Azure app name
         execute_url = f"{base_url}/execute"
         answer = execute_url
 
