@@ -9,7 +9,7 @@ def solve_question(file_path):
         content = file.read()
 
     # Make a POST request to the Vercel API
-    url = "https://question3.vercel.app/api/process"  # Replace with your Vercel API URL
+    url = "vercel_url"  # Replace with your Vercel API URL
     headers = {'Content-Type': 'application/json'}
     response = requests.post(url, json={"content": content}, headers=headers)
 
