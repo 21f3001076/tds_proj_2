@@ -22,7 +22,7 @@ def run_question_server7():
     async def similarity_endpoint(payload: SimilarityRequest):
         try:
             # Load the AIPROXY_TOKEN from environment variables
-            AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIxZjMwMDEwNzZAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.0fRumh52uOQHXun5hbM9yLbTN8bXeWi3tGOnI_BjY_8"
+            AIPROXY_TOKEN = "AIPROXY_TOKEN"
             if not AIPROXY_TOKEN:
                 raise ValueError("AIPROXY_TOKEN environment variable not set.")
 
