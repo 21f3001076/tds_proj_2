@@ -8,7 +8,7 @@ def handle_vercel_deploy(file_path):
         json_data = json.load(file)
 
     # Send the JSON data to the Vercel API for storage
-    upload_url = "https://question6-hazel.vercel.app/api/upload"
+    upload_url = "vercel_url"
     upload_response = requests.post(upload_url, files={"file": open(file_path, "rb")})
 
     if upload_response.status_code == 200:
